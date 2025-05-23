@@ -1,0 +1,68 @@
+2025-05-23 16:30:35 | tsksetup dswchk:0xFFFF
+2025-05-23 16:30:35 | [3 ms] : ----- tsk_setup() : start --------
+2025-05-23 16:30:35 | [3 ms] : sConDone by PROM (Ver=0100H)
+2025-05-23 16:30:35 | [4 ms] : dsw=ffffH
+2025-05-23 16:30:35 | vg_always_frontpanel_exist=1, optfpga_not_config_mode=0, outtask_not_start_mode=0
+2025-05-23 16:30:35 | [19 ms] : FpgaFromReadMngData() : OK
+2025-05-23 16:30:35 | [19 ms] : SH4GpioInqSConDone() : end
+2025-05-23 16:30:35 | [746 ms] : subCon Config end (from Sh4)
+2025-05-23 16:30:35 | setupFpgaConfig() : fpga_not_config_mode=0, mainConConfigDone=0
+2025-05-23 16:30:35 | [2650 ms] : mainCon(FPv4) Config end
+2025-05-23 16:30:35 | GRUSB_Class_Initialize():iStatus=0
+2025-05-23 16:30:35 | FSCD_init():
+2025-05-23 16:30:35 | FSCD_init():Finished
+2025-05-23 16:30:35 | grp_fs_dev_io_ram_init() : OK
+2025-05-23 16:30:35 | grp_fat_format(mem) : OK
+2025-05-23 16:30:35 | grp_fs_mount(mem) : OK
+2025-05-23 16:30:35 | file system start : OK
+2025-05-23 16:30:35 | file system start : OK
+2025-05-23 16:30:35 | [4234 ms] : VgFsInit() OK :
+2025-05-23 16:30:35 | [4243 ms] : VgCpuPllSet() OK :
+2025-05-23 16:30:35 | [4282 ms] : VgHwInit1() : end
+2025-05-23 16:30:35 | lcd_fbuf_vram = 88ddb900H - 88e394ffH
+2025-05-23 16:30:35 | [4363 ms] : VgHwInit2() : end
+2025-05-23 16:30:35 | *************************************************************************
+2025-05-23 16:30:35 | * ReleaseROM               MONITOR START         (May 12 2023,11:38:17) *
+2025-05-23 16:30:35 | *************************************************************************
+2025-05-23 16:30:35 | @>GRUSB_Initialize():
+2025-05-23 16:30:35 | GRUSB_R597H_Ct_Task():0050H
+2025-05-23 16:30:35 | GRUSB_R597H_CB_Task():004FH
+2025-05-23 16:30:35 | GRUSB_R597H_Rhub_Task():004EH
+2025-05-23 16:30:35 | test_event_task(slf_id=77):Start
+2025-05-23 16:30:35 | test_event_task() : Wait for DataQue...(g_ptXferQue=88d3c8b0H)
+2025-05-23 16:30:35 | GRUSB_Enable():
+2025-05-23 16:30:35 | [4870 ms] : GRUSB_Test_Stack_Init2() : ret=0
+2025-05-23 16:30:37 | [6888 ms] : fpgaOptUnitWrConfigAll() start
+2025-05-23 16:30:37 | fpgaOptUnitWrConfigPre() : OK (slotNumAvail=1)
+2025-05-23 16:30:38 | fpgaOptUnitWrConfig(slot=0, type=4d0dH) : Start [7252 ms]
+2025-05-23 16:30:40 | fpgaOptUnitWrConfig(slot=0, type=4d0dH) : OK [11054 ms]
+2025-05-23 16:30:40 | *SCTRL_IFBUSS_TERM2(b4800008H)=1
+2025-05-23 16:30:40 | OptUnitTerminate() : pw=b4870006H
+2025-05-23 16:30:40 | [11071 ms] : fpgaM1KintexWrConfigAll() start
+2025-05-23 16:30:40 | [11083 ms] : fpgaOptUnitWrConfigAll() end : ret=0
+2025-05-23 16:30:40 | [11120 ms] : VgClkCleaner() OK :
+2025-05-23 16:30:40 | [11130 ms] : SetAudioPll() OK :
+2025-05-23 16:30:40 | [11144 ms] : Vm1876ClkCleaner() OK :
+2025-05-23 16:30:40 | DataIoReadSnoMacData() : OK
+2025-05-23 16:30:40 | DataIoReadCfgData() : OK
+2025-05-23 16:30:40 | [11152 ms] : VgInit() : end
+2025-05-23 16:30:40 | MCtrlSetS_Triger() : p=b9c000b0, ld=0H (engine_no=0, func=0,0,0,0)
+2025-05-23 16:30:40 | outBoardTaskInit( boardType=(dH,0H,0H,0H)
+2025-05-23 16:30:40 | CHdmiMD_Board::CHdmiMD_Board() : semId_top_Slot=24, semId_top_Port=29 -->
+2025-05-23 16:30:40 | CHdmiMD::CHdmiMD() : semId_top_Slot=24, semId_top_Port=29 -->
+2025-05-23 16:30:42 | [13085 ms] : all Task Start end
+2025-05-23 16:30:42 | HV5_HardReset SlortNo.0
+2025-05-23 16:30:44 | hv5_fw_ver[slot 0] : VSA_SRC_001_0714_01_00
+2025-05-23 16:30:44 | OutputBoard #0 init end (2650 ms)
+2025-05-23 16:30:44 | [15749 ms] : all OutputBoard init end
+2025-05-23 16:30:44 | sta_cyc() : er=0
+2025-05-23 16:30:44 | sta_cyc() : er=0
+2025-05-23 16:30:44 | thread_panelMain() start -->
+2025-05-23 16:30:44 | -->normal mode  (mainConConfigDone=1)
+2025-05-23 16:30:45 | OutputBoradNum [1] coonnectStlastInfo(err=0) : id=4cH, grpno=0, prgno=502, patno=502, lastInfo(err=0) : id=4cH, grpno=0, prgno=502, patno=502, mute=0
+2025-05-23 16:30:45 | ITFUSBLib_Init() : UsbFunc_Init() --- ret=0
+2025-05-23 16:30:45 | ITFUSBLib_Init() : UsbFuncCom_Open() --- ret=0
+2025-05-23 16:30:45 | ITFUSBLib_Init() : UsbFunc_Start() --- ret=0
+2025-05-23 16:30:45 | TaskUsbSvr():start
+2025-05-23 16:30:45 | RamSize : 8192 [2000H]
+2025-05-23 16:30:45 | TaskEthSvr() : start
