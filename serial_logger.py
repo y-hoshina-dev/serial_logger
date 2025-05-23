@@ -2,15 +2,22 @@ import serial
 import time
 import datetime
 from colorama import init, Fore
+import os
 
 # 初期化
 init()
 
 # 設定
-COM_PORT = 'COM6'     # ご自身の環境に合わせて変更
-BAUD_RATE = 38400      # 通信速度（製品に合わせて変更）
-today = datetime.date.today().strftime('%Y-%M-%D')
-LOG_FILE = f'log_{today}.txt'  # 保存するファイル名
+COM_PORT = 'COM6'     
+BAUD_RATE = 38400     
+
+# ログフォルダとファイル名設定
+log_dir = "logs"
+os.makedirs(log_dir, exist_ok=True)
+
+# 正しいフォーマット指定子でファイル名を生成
+timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+LOG_FILE = os.path.join(log_dir, f"log_{timestamp}.txt")
 
 try:
     with serial.Serial(COM_PORT, BAUD_RATE, timeout=1) as ser:
@@ -30,3 +37,4 @@ except serial.SerialException as e:
     print(f"[ERROR] シリアルポートに接続できません: {e}")
 except KeyboardInterrupt:
     print("\n[INFO] ログ取得を中断しました")
+
